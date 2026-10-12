@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "updated": "2026-10-12",
+  "selectors": {
+    "heading": "main h1, main h2",
+    "stickyBar": "[role=\"toolbar\"]",
+    "connectLink": "a[href*=\"custom-invite/\"]",
+    "pending": "main [aria-label^=\"Pending, click to withdraw\"]",
+    "noteBox": "textarea#custom-message, textarea[name=\"message\"]",
+    "emailBox": "input[type=\"email\"][name=\"email\"]",
+    "dialog": "[role=\"dialog\"], dialog, .artdeco-modal",
+    "notices": "[role=\"dialog\"], dialog, .artdeco-modal, [role=\"alert\"], .artdeco-toast-item",
+    "moreButton": {
+      "regex": "^More( actions)?$",
+      "flags": "i"
+    },
+    "addNoteButton": {
+      "regex": "add a note",
+      "flags": "i"
+    },
+    "sendButton": {
+      "regex": "send invitation",
+      "flags": "i"
+    },
+    "dismissButton": {
+      "regex": "^Dismiss$",
+      "flags": "i"
+    },
+    "discardButton": {
+      "regex": "^Discard",
+      "flags": "i"
+    },
+    "resultLink": "main a[href*=\"/in/\"]",
+    "resultDegree": {
+      "regex": "•\\s*(1st|2nd|3rd\\+?)",
+      "flags": ""
+    },
+    "resultAction": {
+      "regex": "^Invite .+ to connect$|^Send a message|^Pending|^Follow ",
+      "flags": ""
+    },
+    "resultPending": {
+      "regex": "^Pending",
+      "flags": ""
+    },
+    "sentInvitesUrl": "https://www.linkedin.com/mynetwork/invitation-manager/sent/",
+    "withdrawButton": {
+      "regex": "^Withdraw",
+      "flags": "i"
+    },
+    "withdrawConfirm": {
+      "regex": "^Withdraw$",
+      "flags": "i"
+    },
+    "loadMoreButton": {
+      "regex": "^(Load|Show|See) more",
+      "flags": "i"
+    },
+    "limitText": {
+      "regex": "invitation limit|personali[sz]ed invitations",
+      "flags": "i"
+    },
+    "degree": {
+      "regex": "^·?\\s*(1st|2nd|3rd\\+?)$",
+      "flags": ""
+    },
+    "blockedPaths": [
+      "/checkpoint",
+      "/login",
+      "/authwall",
+      "/uas/"
+    ]
+  }
+}
