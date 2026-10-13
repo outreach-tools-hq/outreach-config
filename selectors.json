@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updated": "2026-10-12",
+  "version": 2,
+  "updated": "2026-10-13",
   "selectors": {
     "heading": "main h1, main h2",
     "stickyBar": "[role=\"toolbar\"]",
@@ -43,9 +43,18 @@
       "regex": "^Pending",
       "flags": ""
     },
+    "noResultsText": {
+      "regex": "No results found",
+      "flags": "i"
+    },
     "sentInvitesUrl": "https://www.linkedin.com/mynetwork/invitation-manager/sent/",
+    "sentCard": "[role=\"listitem\"]",
     "withdrawButton": {
       "regex": "^Withdraw",
+      "flags": "i"
+    },
+    "withdrawLabelPrefix": {
+      "regex": "^Withdraw invitation sent to\\s*",
       "flags": "i"
     },
     "withdrawConfirm": {
@@ -54,6 +63,21 @@
     },
     "loadMoreButton": {
       "regex": "^(Load|Show|See) more",
+      "flags": "i"
+    },
+    "connectionsUrl": "https://www.linkedin.com/mynetwork/invite-connect/connections/",
+    "messageButton": {
+      "regex": "^Message\\b",
+      "flags": "i"
+    },
+    "messageBox": ".msg-form__contenteditable, div[role=\"textbox\"][contenteditable=\"true\"]",
+    "messageSendButton": {
+      "regex": "^Send$",
+      "flags": "i"
+    },
+    "messageItem": ".msg-s-event-listitem, .msg-s-message-list__event",
+    "messageCloseButton": {
+      "regex": "^Close your (conversation|draft)",
       "flags": "i"
     },
     "limitText": {
